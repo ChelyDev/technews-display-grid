@@ -1,0 +1,138 @@
+:root{
+    --amarelo: #BFF009;
+    --cinza: #868585;
+    --preto: #1e1e1e;
+    --branco: #ffffff;
+    --cinza-claro: #f2f2f2;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    background-color: var(--branco);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+header section {
+    width: 1312px;
+    margin: 0px auto;
+    align-items: center;
+    padding: 19px 0px;
+}
+
+header section nav{
+    gap: 32px;
+    background-color: var(--cinza-claro);
+
+}
+
+header section nav a{
+    text-decoration: none;
+    color: var(--preto);
+    padding: 16px;
+}
+
+header section > a{ 
+    color: var(--preto);
+    background-color: var(--amarelo);
+    padding: 16px;
+    text-decoration: none;
+}
+
+main section{
+    width: 1312px;
+    margin: 64px auto;
+}
+
+main header {
+    padding: 0;
+    text-align: center;
+}
+
+main header small {
+    padding: 8px;
+    background-color: var(--amarelo);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--preto);
+}
+
+main header h1{
+    font-size: 48px;
+    padding: 8px 0px;
+
+}
+
+main header p{
+    font-size: 14px;
+    color: var(--cinza);
+    max-width: 354px;
+    margin: 0 auto;
+}
+
+main section > section {
+    gap: 32px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+main section .card{
+    width: 368px;
+    padding: 24px;
+    display: grid;
+    gap: 16px;
+    background-color: var(--cinza-claro);
+    border-radius: 8px;
+} 
+
+main section .card:hover{
+    background-color: var(--preto);
+}
+
+main section .card a{
+    color: var(--preto);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main section .card:hover a{
+    color: var(--branco);
+}
+
+main section .card p{
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+main section .card:first-child{
+    background-color: #BFF009;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--preto);
+    padding: 46px 0px;
+    color: var(--cinza);
+}
